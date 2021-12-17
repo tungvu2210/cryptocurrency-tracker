@@ -86,7 +86,7 @@ export default function StickyHeadTable({ rows, searchTerm }) {
             {rows
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((row, index) => {
-                const change24h = row.price_change_percentage_24h;
+                const change24h = row.price_change_percentage_24h || 0;
                 return (
                   <TableRow hover tabIndex={-1} key={row.id}>
                     <TableCell

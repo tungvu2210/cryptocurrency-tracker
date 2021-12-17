@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
   root: {
-    width: "50%",
+    width: "60%",
     "& .MuiInputBase-input": {
       color: "white",
     },
